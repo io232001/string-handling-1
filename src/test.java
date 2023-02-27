@@ -6,10 +6,11 @@ public class test
     {
         String string1 = "Hello";
         String string2 = "How are you?";
-        System.out.print(string1.charAt(0));
-        System.out.print(string1.charAt(1));
-        System.out.print(string2.charAt(10));
-        System.out.print(string2.charAt(11));
+        String firstTwoChars = string1.substring(0, 2);
+        String lastTwoChars = string2.substring(string2.length() - 2);
+        String combined = firstTwoChars + lastTwoChars;
+        char[] charArray = combined.toCharArray();
+        System.out.println(charArray);
     }
 }
 
